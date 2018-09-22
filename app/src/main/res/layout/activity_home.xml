@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeActivity">
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/radiogroup"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/news"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="@drawable/wen"
+            android:gravity="center"
+            android:text="新闻"
+            android:layout_margin="5dp"
+            android:textSize="14dp"
+            android:drawableTop="@drawable/tu"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/topic"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="@drawable/wen"
+            android:button="@null"
+            android:gravity="center"
+            android:text="话题"
+            android:layout_margin="5dp"
+            android:textSize="14dp"
+            android:drawableTop="@drawable/tu3"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:text="我的"
+            android:textSize="14dp"
+            android:button="@null"
+            android:id="@+id/me"
+            android:layout_margin="5dp"
+            android:textColor="@drawable/wen"
+            android:gravity="center"
+            android:drawableTop="@drawable/tu2"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/form"
+        android:layout_above="@id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+
+
+</RelativeLayout>
+
+

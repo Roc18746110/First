@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textColor="#222222"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/three_img_left"
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_three"
+        app:srcCompat="@drawable/santu" />
+
+    <ImageView
+        android:id="@+id/three_img_center"
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/three_img_left"
+        app:layout_constraintEnd_toStartOf="@+id/three_img_right"
+        app:layout_constraintStart_toEndOf="@+id/three_img_left"
+        app:layout_constraintTop_toTopOf="@+id/three_img_left"
+        app:srcCompat="@drawable/santu" />
+
+    <ImageView
+        android:id="@+id/three_img_right"
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/three_img_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/three_img_center"
+        app:layout_constraintTop_toTopOf="@+id/three_img_center"
+        app:srcCompat="@drawable/santu" />
+
+    <ImageView
+        android:id="@+id/istop_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="@+id/three_img_left"
+        app:layout_constraintTop_toBottomOf="@+id/three_img_left"
+        app:srcCompat="@drawable/zhiding" />
+
+    <TextView
+        android:id="@+id/origin_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/istop_three"
+        app:layout_constraintStart_toEndOf="@+id/istop_three"
+        app:layout_constraintTop_toTopOf="@+id/istop_three" />
+
+    <TextView
+        android:id="@+id/pageviews_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/origin_three"
+        app:layout_constraintStart_toEndOf="@+id/origin_three"
+        app:layout_constraintTop_toTopOf="@+id/origin_three" />
+
+    <TextView
+        android:id="@+id/time_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pageviews_three"
+        app:layout_constraintStart_toEndOf="@+id/pageviews_three"
+        app:layout_constraintTop_toTopOf="@+id/pageviews_three" />
+
+    <ImageView
+        android:id="@+id/pinbi_three"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/time_three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/time_three"
+        app:srcCompat="@drawable/news_x" />
+
+    <View
+        android:id="@+id/view11"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="19dp"
+        android:background="#fafcfc"
+        app:layout_constraintEnd_toEndOf="@+id/three_img_right"
+        app:layout_constraintStart_toStartOf="@+id/three_img_left"
+        app:layout_constraintTop_toBottomOf="@+id/time_three" />
+</android.support.constraint.ConstraintLayout>

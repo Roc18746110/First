@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingEnd="@dimen/w_px_30"
+    android:paddingLeft="@dimen/w_px_30"
+    android:paddingRight="@dimen/w_px_30"
+    android:paddingStart="@dimen/w_px_30"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/titile_one"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text=" 你好速度熟练度附近"
+        android:textAllCaps="true"
+        android:textColor="#222222"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/img_one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_one"
+        android:layout_width="@dimen/w_px_260"
+        android:layout_height="@dimen/h_px_200"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titile_one"
+        app:srcCompat="@drawable/zhanwei" />
+
+    <ImageView
+        android:id="@+id/istop_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/barrier2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/zhiding" />
+
+    <TextView
+
+        android:id="@+id/origin_one"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/istop_one"
+        app:layout_constraintStart_toEndOf="@+id/istop_one"
+        app:layout_constraintTop_toTopOf="@+id/istop_one" />
+
+    <TextView
+
+        android:id="@+id/pageviews_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/origin_one"
+        app:layout_constraintStart_toEndOf="@+id/origin_one"
+        app:layout_constraintTop_toTopOf="@+id/origin_one" />
+
+    <TextView
+
+        android:id="@+id/time_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pageviews_one"
+        app:layout_constraintStart_toEndOf="@+id/pageviews_one"
+        app:layout_constraintTop_toTopOf="@+id/pageviews_one"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+
+        android:id="@+id/pinbi_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/time_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/time_one"
+        app:srcCompat="@drawable/news_x" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="titile_one,img_one"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="奥斯盛"
+        android:textColor="@color/text_bg_color_j"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titile_one" />
+
+</android.support.constraint.ConstraintLayout>

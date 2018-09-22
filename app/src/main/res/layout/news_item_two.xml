@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/w_px_30"
+    android:paddingRight="@dimen/w_px_30"
+    android:paddingEnd="@dimen/w_px_30"
+    android:paddingLeft="@dimen/w_px_30"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/h_px_40"
+        android:text="TextView"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="#222222"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_two"
+        android:layout_width="331dp"
+        android:layout_height="167dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/h_px_30"
+        app:layout_constraintDimensionRatio="h,2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_two"
+        app:srcCompat="@drawable/zhanwei_chang" />
+    <!--<ImageView-->
+        <!--android:id="@+id/img_two"-->
+        <!--android:layout_width="331dp"-->
+        <!--android:layout_height="167dp"-->
+        <!--android:layout_marginEnd="14dp"-->
+        <!--android:layout_marginLeft="14dp"-->
+        <!--android:layout_marginRight="14dp"-->
+        <!--android:layout_marginStart="14dp"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/title_two"-->
+        <!--app:srcCompat="@drawable/zhanwei_chang" />-->
+
+    <ImageView
+        android:id="@+id/istop_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img_two"
+        app:layout_constraintTop_toBottomOf="@+id/img_two"
+        app:srcCompat="@drawable/zhiding" />
+
+    <TextView
+        android:id="@+id/origin_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/istop_two"
+        app:layout_constraintStart_toEndOf="@+id/istop_two"
+        app:layout_constraintTop_toTopOf="@+id/istop_two" />
+
+    <TextView
+        android:id="@+id/pageviews_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/origin_two"
+        app:layout_constraintStart_toEndOf="@+id/origin_two"
+        app:layout_constraintTop_toTopOf="@+id/origin_two" />
+
+    <TextView
+        android:id="@+id/time_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:text="TextView"
+        android:textColor="#a4a4a4"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pageviews_two"
+        app:layout_constraintStart_toEndOf="@+id/pageviews_two"
+        app:layout_constraintTop_toTopOf="@+id/pageviews_two" />
+
+    <ImageView
+        android:id="@+id/pinbi_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/time_two"
+        app:layout_constraintEnd_toEndOf="@+id/img_two"
+        app:layout_constraintTop_toBottomOf="@+id/img_two"
+        app:srcCompat="@drawable/news_x" />
+</android.support.constraint.ConstraintLayout>
